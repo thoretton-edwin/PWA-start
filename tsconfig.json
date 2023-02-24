@@ -1,27 +1,20 @@
 {
-  "compilerOptions": {
-      "module": "esnext",
-      "target": "esnext",
-      "lib": ["es2017", "esnext", "dom", "dom.iterable"],
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "outDir": "./types",
-      "strict": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noImplicitReturns": true,
-      "noFallthroughCasesInSwitch": true,
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-      "experimentalDecorators": true,
-      "forceConsistentCasingInFileNames": true,
-      "useDefineForClassFields": false,
-      "isolatedModules": true,
-      "types": [
-          "vite-plugin-pwa/client",
-          "vite/client"
-      ]
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "types": ["vite/client",  "vite-plugin-pwa/client"],
+        "allowJs": false,
+        "skipLibCheck": false,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react"
+    },
+    "include": ["./src"]
 }
