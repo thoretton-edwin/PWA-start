@@ -27,7 +27,12 @@ function CustomAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography
+            data-testid="app-title"
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          >
             Chromatic Tuner
           </Typography>
         </Toolbar>
@@ -39,6 +44,7 @@ function CustomAppBar() {
 function RecordButton() {
   return (
     <SpeedDial
+      data-test-id={'record-button'}
       ariaLabel="recording action"
       sx={{ position: 'absolute', bottom: 16, right: 16 }}
       icon={<MicIcon />}
