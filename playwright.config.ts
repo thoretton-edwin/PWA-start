@@ -52,7 +52,7 @@ export default defineConfig({
   outputDir: 'test-results/',
 
   webServer: {
-    command: 'npm run start',
+    command: 'vite --open --port 3000',
     port: 3000,
   },
 });
