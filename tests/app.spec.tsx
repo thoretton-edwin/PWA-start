@@ -1,12 +1,18 @@
-import { it, describe, expect } from 'vitest';
+import { it, describe, expect, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import App from '../src/App';
 
 describe('App', () => {
-  it('renders headline', () => {
+  beforeEach(() => {
     render(<App />);
+  });
 
-    expect(screen.getByText('Chromatic Tuner'));
+  it('renders headline', () => {
+    expect(screen.getByText('Chromatic Tuner')).toBeVisible();
+  });
+
+  it('shows a recording button', () => {
+    expect(screen.getByTestId('record-button')).toBeVisible();
   });
 });

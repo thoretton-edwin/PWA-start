@@ -44,11 +44,11 @@ function CustomAppBar() {
 function RecordButton() {
   return (
     <SpeedDial
-      data-test-id={'record-button'}
-      ariaLabel="recording action"
+      data-testid="record-button"
       sx={{ position: 'absolute', bottom: 16, right: 16 }}
       icon={<MicIcon />}
       onClick={startRecording}
+      ariaLabel="recording button"
     />
   );
 }
